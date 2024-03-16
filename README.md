@@ -8,6 +8,24 @@ seperti yang telah dispesifikasikan. Aamiin
 Program ini adalah sebuah aplikasi Java Swing GUI yang dirancang untuk mengelola data mahasiswa. Dengan menggunakan program ini, pengguna dapat melakukan operasi CRUD yaitu Create (membuat), Read (membaca), Update (memperbarui), dan Delete (menghapus) data mahasiswa.
 
 ## Desain Program
+Pada kelas Mahasiswa, terdapat 5 atribut yaitu:
+- `nim`: Menyimpan nomor induk mahasiswa (NIM) dalam bentuk string.
+- `nama`: Menyimpan nama lengkap mahasiswa dalam bentuk string.
+- `jenisKelamin`: Menyimpan jenis kelamin mahasiswa dalam bentuk string.
+- `jalurMasuk`: Menyimpan jalur masuk mahasiswa ke perguruan tinggi dalam bentuk string.
+- `status`: Menyimpan status mahasiswa saat ini dalam bentuk string.
+
+Pada kelas Menu, terdapat 2 atribut yaitu:
+- `listMahasiswa`: ArrayList untuk manampung semua objek Mahasiswa.
+- `selectedIndex`: Menyimpan indeks baris yang sedang dipilih pada tabel dalam bentuk integer.
+
+sementara untuk elemen GUI yang digunakan antara lain:
+-  `JLabel`: Digunakan untuk memberikan label pada elemen-elemen GUI seperti NIM, nama, jenis kelamin, jalur masuk, dan status.
+-  `JTextField`: Digunakan untuk memasukkan nilai NIM dan nama mahasiswa.
+-  `JComboBox`: Digunakan untuk memilih jenis kelamin dan jalur masuk mahasiswa.
+-  `JRadioButton`: Digunakan untuk memilih status mahasiswa, yaitu "Aktif" atau "Cuti".
+-  `JButton`: Digunakan untuk membuat tombol yang bisa ditekan seperti tombol Add, Update, Cancel, Delete.
+-  `JTable`: Digunakan untuk menampilkan data mahasiswa yang telah dimasukkan atau diperbarui.
 
 ## Penjelasan Alur
 1. Pada saat program dijalankan, pengguna akan ditampilkan dengan tabel yang menampilkan data mahasiswa yang telah disimpan.
