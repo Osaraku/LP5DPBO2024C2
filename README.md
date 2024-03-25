@@ -27,15 +27,22 @@ sementara untuk elemen GUI yang digunakan antara lain:
 -  `JButton`: Digunakan untuk membuat tombol yang bisa ditekan seperti tombol Add, Update, Cancel, Delete.
 -  `JTable`: Digunakan untuk menampilkan data mahasiswa yang telah dimasukkan atau diperbarui.
 
+Terdapat penambahan beberapa fitur dari versi sebelumnya seperti:
+1. Semua proses CRUD sudah terhubung ke dalam database.
+2. Terdapat dialog/prompt error jika masih ada input yang kosong saat insert/update.
+3. Terdapat dialog/prompt error jika sudah ada NIM yang sama saat insert.
+
 ## Penjelasan Alur
 1. Pada saat program dijalankan, pengguna akan ditampilkan dengan tabel yang menampilkan data mahasiswa yang telah disimpan.
 2. Pengguna memiliki opsi untuk menambahkan data mahasiswa baru dengan mengisi formulir yang tersedia lalu menekan tombol `Add`.
-3. Pengguna dapat menekan tombol `Cancel` untuk membersihkan formulir.
-4. Jika pengguna menekan salah satu entri mahasiswa di tabel, formulir akan terisi dengan data mahasiswa yang dipilih.
-5. Pengguna dapat melakukan pengeditan pada formulir kemudian menekan tombol `Update` untuk mengubah data mahasiswa.
-6. Pengguna juga dapat menghapus data mahasiswa yang dipilih dengan menekan tombol `Delete`, dan program akan meminta konfirmasi pengguna untuk menghapus data.
-7. Jika pengguna mengonfirmasi penghapusan, data mahasiswa yang dipilih akan dihapus dari tabel.
-8. Pengguna dapat menekan tombol `Cancel` pada saat memilih salah satu mahasiswa untuk membatalkan pilihan.
+3. Data tidak dapat ditambahkan apabila masih ada form yang belum diisi dan juga sudah ada mahasiswa yang menggunakan NIM yang sama sebelumnya.
+4. Pengguna dapat menekan tombol `Cancel` untuk membersihkan formulir.
+5. Jika pengguna menekan salah satu entri mahasiswa di tabel, formulir akan terisi dengan data mahasiswa yang dipilih.
+6. Pengguna dapat melakukan pengeditan pada formulir kemudian menekan tombol `Update` untuk mengubah data mahasiswa.
+7. Sama seperti penambahan data, pengubahan data tidak dapat dilakukan apabila ada bagian form yang kosong.
+8. Pengguna juga dapat menghapus data mahasiswa yang dipilih dengan menekan tombol `Delete`, dan program akan meminta konfirmasi pengguna untuk menghapus data.
+9. Jika pengguna mengonfirmasi penghapusan, data mahasiswa yang dipilih akan dihapus dari tabel.
+10. Pengguna dapat menekan tombol `Cancel` pada saat memilih salah satu mahasiswa untuk membatalkan pilihan.
 
 ## Dokumentasi
 ### Screen record
